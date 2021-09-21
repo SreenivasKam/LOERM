@@ -1,0 +1,305 @@
+body {
+    padding: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+#side {
+    position: fixed;
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+}
+
+.items {
+    color: #7F7F7F;
+}
+
+.cart {
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    font-size: medium;
+    border-radius: 35px;
+    color: white;
+    box-shadow: none;
+    background-color: #FF4E4E;
+}
+
+.striker {
+    color: #FF4E4E;
+    padding: -px 0;
+}
+
+p {
+    color: black;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+}
+
+.heading {
+    display: inline-block;
+    width: 50%;
+}
+
+.heading1 {
+    margin-top: 50px;
+    width: 30%;
+    text-align: start;
+    color: #7F7F7F;
+    display: inline-block;
+}
+
+p {
+    color: #7F7F7F;
+}
+
+.container {
+    display: flex;
+    padding: 30px;
+    padding-bottom: 10px;
+    width: 80%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+
+.hr1 {
+    width: 60px;
+    text-align: start;
+    background-color: #FF4E4E;
+    color: #FF4E4E;
+    height: 2.5px;
+}
+
+.card {
+    width: 160px;
+    margin: 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: inset;
+    background-color: white;
+}
+
+.sds {
+    padding-left: 90px;
+    width: 75%;
+    overflow-x: auto;
+}
+
+.sds::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sds {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+.images {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.fulltop {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        padding: 30px;
+        padding-bottom: 10px;
+        width: 60%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-left: 200px;
+    }
+
+    .sds {
+        padding-left: 30px;
+        width: 60%;
+        overflow-x: auto;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+
+        background-color: rgb(245, 245, 245);
+    }
+    .container {
+        display: block;
+        padding: 30px 20px;
+        width: 88%;
+        margin: auto;
+    }
+
+    .sds {
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        overflow-x: auto;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .heading {
+        display: block;
+        width: 80%;
+    }
+
+    .heading1 {
+        margin-top: 150px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: #7F7F7F;
+        display: block;
+    }
+
+    #side {
+        position: fixed;
+        width: 200px;
+        height: 500px;
+        display: none;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 160px;
+        border-radius: 15px;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        box-shadow: inset;
+        background-color: white;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .hr1 {
+        width: 100px;
+        margin: auto;
+        text-align: center;
+        background-color: #FF4E4E;
+        color: #FF4E4E;
+        height: 2.5px;
+    }
+
+    .fulltop {
+        display: block;
+    }
+
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .makes {
+        width: 25px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #FF4E4E;
+        margin: 6px 0;
+    }
+    .makes1 {
+        width: 35px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #FF4E4E;
+        margin: 6px 0;
+    }
+    .makes2 {
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #FF4E4E;
+        margin: 6px 0;
+    }
+    .fls{
+        display: flex;
+        text-align: start;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+    }
+    .lows{
+        padding: 10px 0;
+        color: #000000;
+        font-size: 2rem;
+        font-weight: 900;
+
+    }
+    .cars{
+        margin:0 10px;
+        padding: 10px 0;
+    }
+
+}
